@@ -1,0 +1,65 @@
+<h4>More</h4>
+<div>
+    {{name}}
+</div>
+<div>
+    uppercase:
+    {{name | uppercase}}
+</div>
+<div>
+    lowercase:
+    {{name | lowercase}}
+</div>
+<div>
+    titlecase:
+    {{name | titlecase}}
+</div>
+<div>
+    cost:
+    {{cost}}
+</div>
+<div>
+    cost in dollars
+    {{cost | currency}}
+</div>
+<div>
+    cost in INR
+    {{cost | currency:"INR"}}
+</div>
+<div>
+    date:
+    {{today}}
+</div>
+<div>
+    date:
+    {{today | date}}
+</div>
+<div>
+    short date:
+    {{today | date:"8 bort"}}
+</div>
+<div>
+    s:
+    {{s | square}}
+</div>
+<div>
+    {{s}}
+</div>
+<div>hello</div>
+<table class="table">
+<thead>
+<th>ID</th>
+<th>Email</th>
+<th>Fname</th>
+<th>Lname</th>
+<th>Image</th>
+</thead>
+<tr *ngFor="let img of image">
+    <td>{{img.id}}</td>
+    <td>{{img.email}}</td>
+    <td>{{img.first_name}}</td>
+    <td>{{img.last_name}}</td>
+    <td><img [src]="img.avatar" alt="no img"></td>
+</tr>
+</table>
+
